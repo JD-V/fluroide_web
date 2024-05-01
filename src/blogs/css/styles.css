@@ -1,0 +1,97 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.site-nav-left {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-right: 10px;
+    letter-spacing: .4px;
+    white-space: nowrap;
+    -ms-overflow-scrolling: touch;
+}
+
+.site-nav-right { 
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+ul, ol {
+    /* margin: 0 0 0 16px; */
+    padding: 0 0 0 32px;
+}
+
+.header-class {
+    background-color: #f4f4f4;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header, footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.blog-post {
+    padding: 20px 0;
+}
+
+.post-title {
+    color: #333;
+}
+
+.post-meta {
+    margin-bottom: 20px;
+}
+
+.post-meta .author {
+    margin-right: 10px;
+}
+
+.post-meta .date {
+    color: #777;
+}
+
+.post-content {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}

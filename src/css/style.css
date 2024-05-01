@@ -439,6 +439,8 @@ a:focus {
 
 .blog_section .box .img-box {
   position: relative;
+  width: 250px;
+  height: 250px;
 }
 
 .blog_section .box .img-box img {
@@ -846,3 +848,18 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .top-reads .artical-img, .featured_articles .artical-img {
+      margin-right: 0 !important;
+      width: 40% !important;
+  }
+}
+.top-reads .artical-img {
+  overflow: hidden;
+  margin-right: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 320px;
+}
