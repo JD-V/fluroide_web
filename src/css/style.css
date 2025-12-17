@@ -373,6 +373,12 @@ a:focus {
   margin-bottom: 0;
 }
 
+
+.furniture_section .box .detail-box .price_box span {
+  color: #0a3b41;
+  font-size: 12px;
+}
+
 .furniture_section .box .detail-box .price_box .price_heading span {
   color: #6bb7be;
 }
