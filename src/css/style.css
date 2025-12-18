@@ -602,20 +602,24 @@ a:focus {
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
 }
 
-.contact_section .form_container input::-webkit-input-placeholder {
-  color: #333;
+.contact_section .form_container input::-webkit-input-placeholder,
+.contact_section .form_container textarea::-webkit-input-placeholder {
+  color: #9b9b9b;
 }
 
-.contact_section .form_container input:-ms-input-placeholder {
-  color: #333;
+.contact_section .form_container input:-ms-input-placeholder,
+.contact_section .form_container textarea:-ms-input-placeholder {
+  color: #9b9b9b;
 }
 
-.contact_section .form_container input::-ms-input-placeholder {
-  color: #333;
+.contact_section .form_container input::-ms-input-placeholder,
+.contact_section .form_container textarea::-ms-input-placeholder {
+  color: #9b9b9b;
 }
 
-.contact_section .form_container input::placeholder {
-  color: #333;
+.contact_section .form_container input::placeholder,
+.contact_section .form_container textarea::placeholder {
+  color: #9b9b9b;
 }
 
 .contact_section .form_container input.message-box {
