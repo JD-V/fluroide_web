@@ -101,6 +101,26 @@ h2 {}
     min-height: auto;
 
   }
+
+  .achivements_section {
+    position: relative;
+    // background-color: #b8bdbd;
+    padding-top: 25px;
+
+    padding-bottom: 25px;
+
+    h1 {
+      color:#6ec1e4;
+      font-weight: bold;
+    }
+
+    p {
+      font-family:sans-serif;
+    }
+  }
+
+  
+  
 }
 
 .header_section {
@@ -333,6 +353,23 @@ a:focus {
 
 // end slider section
 
+/*# sourceMappingURL=style.css.map */
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .top-reads .artical-img, .featured_articles .artical-img {
+      margin-right: 0 !important;
+      width: 40% !important;
+  }
+}
+.top-reads .artical-img {
+  overflow: hidden;
+  margin-right: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 320px;
+}
+
 // furniture section
 
 .furniture_section {
@@ -368,6 +405,11 @@ a:focus {
       .price_box {
         display: flex;
         justify-content: space-between;
+
+        .span {
+          color: #0a3b41;
+          font-size: 12px;
+        }
 
         .price_heading {
           span {
@@ -552,14 +594,18 @@ a:focus {
 .contact_section {
   position: relative;
   background-color: $bgColor;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   .heading_container {
     margin-bottom: 25px;
 
     h2 {
       text-transform: uppercase;
+    }
+
+    h3 {
+      text-align: center;
     }
   }
 
@@ -612,6 +658,48 @@ a:focus {
 
 // end contact section
 
+$card-bg: #ffffff;       // default card background
+$card-hover-bg: #6ec1e4; // background on hover
+$card-text: #333;         // default text color
+$card-hover-text: #fff;   // text color on hover
+
+.treatments-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+
+  .treatments-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #6ec1e4;
+  }
+
+  .treatments-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+
+    .treatment-card {
+      background: $card-bg;
+      border-radius: 6px;
+      padding: 18px 22px;
+      width: 240px;
+      font-size: 16px;
+      color: $card-text;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: $card-hover-bg;
+        color: $card-hover-text;
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 14px rgba(0,0,0,0.13);
+      }
+    }
+  }
+}
 
 
 // info section
